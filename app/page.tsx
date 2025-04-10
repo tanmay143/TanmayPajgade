@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, MapPin, Phone, FileDown } from "lucide-react"
 import Link from "next/link"
 import HeroAnimation from "@/components/hero-animation"
 import SkillsSection from "@/components/skills-section"
@@ -78,6 +78,14 @@ export default function Home() {
               <Phone size={16} className="text-purple-600" />
               <span>+1 704-363-5587</span>
             </Link>
+            <a
+              href="/resume.pdf"
+              download
+              className="flex items-center gap-2 bg-purple-600 text-white shadow-md hover:shadow-lg hover:bg-purple-700 px-4 py-2 rounded-full transition-all"
+            >
+              <FileDown size={16} />
+              <span>Download Resume</span>
+            </a>
           </div>
           <div className="flex justify-center">
             <Link
@@ -278,6 +286,7 @@ export default function Home() {
                         github.com/tanmay143
                       </a>
                     </div>
+                    
                   </div>
                 </div>
                 
